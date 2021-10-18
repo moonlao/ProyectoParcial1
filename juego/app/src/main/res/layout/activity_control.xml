@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Control">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:layout_marginBottom="615dp"
+        android:text="Controles"
+        android:textColor="#0C0C0C"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/upBtn"
+        android:layout_width="94dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="21dp"
+        android:text="QUITAR"
+        app:layout_constraintEnd_toStartOf="@+id/rightBtn"
+        app:layout_constraintStart_toEndOf="@+id/leftBtn"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/leftBtn"
+        android:layout_width="94dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="42dp"
+        android:text="IZQ."
+        app:layout_constraintBottom_toBottomOf="@+id/downBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/upBtn" />
+
+    <Button
+        android:id="@+id/rightBtn"
+        android:layout_width="94dp"
+        android:layout_height="72dp"
+        android:layout_marginEnd="44dp"
+        android:text="DER."
+        app:layout_constraintBottom_toBottomOf="@+id/downBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/upBtn" />
+
+    <Button
+        android:id="@+id/downBtn"
+        android:layout_width="94dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="104dp"
+        android:text="SOLTAR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
